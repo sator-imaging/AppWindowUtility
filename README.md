@@ -40,7 +40,7 @@ Transparency is based on Unity's rendering result. So that you need to set camer
 
 > NOTE: If you use High-Definition Render Pipeline (HDRP) or something based on Scriptable Render Pipeline (SRP), Color Frame Buffer setting needs to be set to RGB 16bit (or 8bit if available). Unity's default is RGB 10bit that Operating System doesn't support.
 
-![](https://www.dropbox.com/s/sntvylmfgrrfw9w/Transparent.gif?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Transparent.gif?raw=true)
 
 
 
@@ -50,7 +50,7 @@ Transparency is based on Unity's rendering result. So that you need to set camer
 
 This will set overall window opacity. It works with see-thru window.
 
-![](https://www.dropbox.com/s/clu72kycyq2isvn/Opacity.gif?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Opacity.gif?raw=true)
 
 
 
@@ -61,11 +61,11 @@ With Transparent enabled, window has no title bar so that you need a way to move
 `WindowGrabber` adds an ability to move window by dragging any area of application window.
 To add this feature, create empty GameObject and attach `WindowGrabber` component.
 
-![](https://www.dropbox.com/s/oxcnjfdkdshogf0/MoveWindow_WindowGrabber.png?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/MoveWindow_WindowGrabber.png?raw=true)
 
 > You can still use uGUI controls if WindowGrabber is used.
 
-![](https://www.dropbox.com/s/etmsd3zb0muhltd/MoveWindow.gif?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/MoveWindow.gif?raw=true)
 
 
 
@@ -86,7 +86,7 @@ This will make window full screen or not.
 
 This will make application window stay on top of other windows while another application has focus.
 
-![](https://www.dropbox.com/s/sip8uw1d91osdii/AlwaysOnTop.gif?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/AlwaysOnTop.gif?raw=true)
 
 
 
@@ -98,7 +98,7 @@ This make application window non-clickable.
 
 > NOTE: You must implement a way to disable this feature not using mouse click. If not implemented, you cannot touch your application anymore.
 
-![](https://www.dropbox.com/s/o27h63u7g5tg9mm/ClickThru_B.gif?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/ClickThru_B.gif?raw=true)
 
 
 
@@ -127,7 +127,7 @@ On Windows, applying `AppWindowUtility.SetKeyingColor(0, 0, 0)` and then `AppWin
 
 > NOTE: This behaviour could be a bug of Windows.
 
-![](https://www.dropbox.com/s/nt5mmncsz6cfvh6/AdditiveComposition.gif?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/AdditiveComposition.gif?raw=true)
 
 
 
@@ -141,7 +141,7 @@ Important Notes
 
 > If App Window Utility doesn't work as you expected, see Player Settings below for reference.
 
-![](https://www.dropbox.com/s/72ii6o5dj7yxqtt/Notes_PlayerSettings.png?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Notes_PlayerSettings.png?raw=true)
 
 
 
@@ -150,7 +150,7 @@ Important Notes
 **Color Buffer Format** must be RGB 16bit (or something supported on Host OS) to work correctly.
 Other renderer based on Scriptable Render Pipeline (SRP) needs setting like this too.
 
-![](https://www.dropbox.com/s/d1qieutmog4npbw/Notes_HDRP.png?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Notes_HDRP.png?raw=true)
 
 
 
@@ -158,7 +158,7 @@ Other renderer based on Scriptable Render Pipeline (SRP) needs setting like this
 
 If you apply `Transparent = true` and then `FrameVisibility = true`, it will remove background filling from application window. Result is below, as you can see, background is filled with window frame color.
 
-![](https://www.dropbox.com/s/sr55jdguin250ic/Notes_TransparentThenShowFrame.gif?dl=1)
+![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Notes_TransparentThenShowFrame.gif?raw=true)
 
 
 
