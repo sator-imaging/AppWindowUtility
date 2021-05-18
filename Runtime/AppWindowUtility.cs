@@ -67,7 +67,7 @@ namespace SatorImaging.AppWindowUtility
                 isFullScreen = value;
 
                 // no way to control SetResolution update timing. it's done at next frame.
-                // so that FrameVisibility executed BEFORE full screen mode turned OFF.
+                // so FrameVisibility done BEFORE full screen disabled no matter when it invoked in setter.
                 // to make it better, simply, reset transparent state.
                 if (!isFullScreen) Transparent = false;
 
