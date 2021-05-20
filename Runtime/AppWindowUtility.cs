@@ -8,38 +8,61 @@ namespace SatorImaging.AppWindowUtility
         public static IPlatformDependent platform;
 
 
+        public static bool AlwaysOnTopSupported { get => platform?.AlwaysOnTopSupported ?? false; }
         public static bool AlwaysOnTop
         {
-            get { return (platform == null) ? false : platform.GetAlwaysOnTop(); }
-            set { platform?.SetAlwaysOnTop(value); }
+            get => platform?.GetAlwaysOnTop() ?? false;
+            set => platform?.SetAlwaysOnTop(value);
         }
 
+        public static bool TransparentSupported { get => platform?.TransparentSupported ?? false; }
         public static bool Transparent
         {
-            get { return (platform == null) ? false : platform.GetTransparent(); }
-            set { platform?.SetTransparent(value); }
+            get => platform?.GetTransparent() ?? false;
+            set => platform?.SetTransparent(value);
         }
 
+        public static bool FrameVisiblitySupported { get => platform?.FrameVisibilitySupported ?? false; }
         public static bool FrameVisibility
         {
-            get { return (platform == null) ? true : platform.GetFrameVisibility(); }
-            set { platform?.SetFrameVisibility(value); }
+            get => platform?.GetFrameVisibility() ?? true;
+            set => platform?.SetFrameVisibility(value);
         }
 
+        public static bool ClickThroughSupported { get => platform?.ClickThroughSupported ?? false; }
         public static bool ClickThrough
         {
-            get { return (platform == null) ? false : platform.GetClickThrough(); }
-            set { platform?.SetClickThrough(value); }
+            get => platform?.GetClickThrough() ?? false;
+            set => platform?.SetClickThrough(value);
         }
 
+        public static bool AsWallpaperSupported { get => platform?.AsWallpaperSupported ?? false; }
         public static bool AsWallpaper
         {
-            get { return (platform == null) ? false : platform.GetAsWallpaper(); }
-            set { platform?.SetAsWallpaper(value); }
+            get => platform?.GetAsWallpaper() ?? false;
+            set => platform?.SetAsWallpaper(value);
         }
 
 
 
+        public static bool    KeyingColorSupported { get => platform?.KeyingColorSupported ?? false; }
+        public static void SetKeyingColor(byte red, byte green, byte blue)
+              => platform?.SetKeyingColor(red, green, blue);
+
+        public static bool    WindowOpacitySupported { get => platform?.WindowOpacitySupported ?? false; }
+        public static void SetWindowOpacity(byte opacity)
+              => platform?.SetWindowOpacity(opacity);
+
+
+
+
+        public static bool WindowPlacementSupported { get => platform?.WindowPlacementSupported ?? false; }
+        public static void MoveWindowRelative(int pixelX, int pixelY)
+              => platform?.MoveWindowRelative(pixelX, pixelY);
+
+
+
+        // fullscreen
         private static int[] lastScreenSize = new int[] { 640, 480 };
         private static bool isFullScreen = (Screen.width == Screen.currentResolution.width && Screen.height == Screen.currentResolution.height);
 
@@ -74,20 +97,6 @@ namespace SatorImaging.AppWindowUtility
             }//set
         }//
 
-
-
-
-        public static void SetKeyingColor(byte red, byte green, byte blue)
-              => platform?.SetKeyingColor(red, green, blue);
-
-        public static void SetWindowOpacity(byte opacity)
-              => platform?.SetWindowOpacity(opacity);
-
-
-
-
-        public static void MoveWindowRelative(int pixelX, int pixelY)
-              => platform?.MoveWindowRelative(pixelX, pixelY);
 
 
 

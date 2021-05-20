@@ -31,6 +31,18 @@ namespace SatorImaging.AppWindowUtility
 
 
 
+        // features supported
+        public bool AlwaysOnTopSupported { get; } = true;
+        public bool TransparentSupported { get; } = true;
+        public bool FrameVisibilitySupported { get; } = true;
+        public bool ClickThroughSupported { get; } = true;
+        public bool AsWallpaperSupported { get; } = true;
+        public bool KeyingColorSupported { get; } = true;
+        public bool WindowOpacitySupported { get; } = true;
+        public bool WindowPlacementSupported { get; } = true;
+
+
+
         public Windows()
         {
             if (isInitialized) return;
