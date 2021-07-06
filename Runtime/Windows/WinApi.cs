@@ -158,6 +158,7 @@ namespace SatorImaging.AppWindowUtility
 
         public const int GWL_STYLE = -16;
         public const uint WS_POPUP = 0x80000000;
+        public const uint WS_BORDER = 0x00800000;
         public const uint WS_VISIBLE = 0x10000000;
         public const uint WS_CAPTION = 0x00C00000;
         public const uint WS_THICKFRAME = 0x00040000;

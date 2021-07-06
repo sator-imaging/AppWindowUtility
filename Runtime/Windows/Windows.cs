@@ -165,8 +165,8 @@ namespace SatorImaging.AppWindowUtility
                     //Debug.Log($"SetFrameVisibility: Client Rect stored.");
                 }
 
-                var currExStyle = WinApi.GetWindowLong(hWnd, WinApi.GWL_EXSTYLE);
-                WinApi.SetWindowLong(hWnd, WinApi.GWL_STYLE, currExStyle | WinApi.WS_POPUP | WinApi.WS_VISIBLE);
+                var currStyle = WinApi.GetWindowLong(hWnd, WinApi.GWL_STYLE);
+                WinApi.SetWindowLong(hWnd, WinApi.GWL_STYLE, currStyle & ~WinApi.WS_BORDER & ~WinApi.WS_THICKFRAME & ~WinApi.WS_CAPTION);
 
                 //// must be done AFTER SetWindowLong
                 MoveWindowRelative(borderWidth, titleBarHeight);

@@ -18,14 +18,18 @@ namespace SatorImaging.AppWindowUtility
         public KeyCode[] temporarilyDisableIfKeyPressed;
 
 
-        bool isDragging = false;
-        Vector2 targetPosition;
+        private bool isDragging = false;
+        Vector2 targetPosition = Vector2.zero;
 
 
         void Update()
         {
+#if UNITY_EDITOR
+            if(isDragging.Equals(isDragging)) return; // to avoid CS0162 warning
+#endif
+
             // do nothing if any uGUI is in use.
-            if (EventSystem.current.currentSelectedGameObject) return;
+            if (EventSystem.current?.currentSelectedGameObject) return;
 
 
             // initialize dragging state. don't check modifier key.
@@ -34,6 +38,7 @@ namespace SatorImaging.AppWindowUtility
             // key check.
             foreach (var k in temporarilyDisableIfKeyPressed) if (Input.GetKey(k)) return;
             if (modifierKey != KeyCode.None && !Input.GetKey(modifierKey)) return;
+
 
 
             if (Input.GetMouseButtonDown((int)mouseButton))
