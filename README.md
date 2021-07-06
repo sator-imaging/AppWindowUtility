@@ -78,7 +78,7 @@ To add this feature, create empty GameObject and attach `WindowGrabber` componen
 
 This will make window full screen or not.
 
-> NOTE: Use this instead of Unity's built-in `UnityEngine.Screen.SetResolution(width, height, isFullScreen)` to work better with App Window Utility.
+> NOTE: Use this instead of Unity's built-in `UnityEngine.Screen.SetResolution(width, height, isFullScreen)` and `UnityEngine.Screen.fullScreen` to work better with App Window Utility.
 
 
 
