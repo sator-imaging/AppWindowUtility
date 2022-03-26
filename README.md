@@ -8,6 +8,7 @@ With this utility, you can make your application window transparent, frameless a
 
 
 - [App Window Utility](#app-window-utility)
+- [License](#license)
 - [Features](#features)
     - [Transparent Window](#transparent-window)
     - [Window Opacity](#window-opacity)
@@ -23,14 +24,25 @@ With this utility, you can make your application window transparent, frameless a
     - [Using with High-Definition Render Pipeline (HDRP)](#using-with-high-definition-render-pipeline-hdrp)
     - [Transparent and Frame Visibility](#transparent-and-frame-visibility)
 - [Copyright](#copyright)
-- [License](#license)
+
+
+
+License
+=======
+
+See [LICENSE.md](LICENSE.md) for detailed licensing information.
 
 
 
 Features
 ========
 
-Tested with Unity 2020.3 LTS and HDRP 10.3.2 on Windows 10 64-bit.
+Features are tested with Unity 2020.3 LTS and HDRP 10.3.2 on Windows 10 64-bit.
+
+
+#### Prerequisites
+
+`using SatorImaging.AppWindowUtility;` is required to make the following examples work.
 
 
 ## Transparent Window
@@ -168,11 +180,4 @@ If you apply `Transparent = true` and then `FrameVisibility = true`, it will rem
 Copyright
 =========
 
-Copyright &copy; 2021 Sator Imaging, all rights reserved.
-
-
-
-License
-=======
-
-See LICENSE text included.
+Copyright &copy; 2022 Sator Imaging, all rights reserved.
