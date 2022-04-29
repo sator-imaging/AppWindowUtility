@@ -1,0 +1,18 @@
+name: Deploy2OM
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: sator-imaging/Copy-to-Another-Repository@v1
+        with:
+
+          # required parameters
+          target-filepath: 'README.md'     # file path to copy
+          output-branch: 'master'  # branch name to create pull request
+          output-repo: 'SatorImaging/OpenManual'
+          git-token: ${{ secrets.Deploy2OM }}
