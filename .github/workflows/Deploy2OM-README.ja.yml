@@ -1,0 +1,22 @@
+name: Deploy2OM-README.ja
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'README.ja.md'  # limit trigger to the target-filepath.
+                     # It's not elegant to set same value in two options but
+                     # there is no way to retrieve this value in composite action.
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: sator-imaging/Copy-to-Another-Repository@v1
+        with:
+
+          # required parameters
+          target-filepath: 'README.ja.md'     # file path to copy
+          output-branch: 'master'  # branch name to create pull request
+          output-repo: 'SatorImaging/OpenManual'
+          git-token: ${{ secrets.Deploy2OM }}
