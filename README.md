@@ -1,8 +1,8 @@
 App Window Utility
 ==================
 
-This utility is for Unity to configure application window style.
-With this utility, you can make your application window transparent, frameless and more.
+This Unity library is designed to configure application window styling.
+With this library, you can make your application window transparent, frameless and more.
 
 ![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Opacity.gif?raw=true)
 
@@ -30,7 +30,9 @@ With this utility, you can make your application window transparent, frameless a
 License
 =======
 
-See [LICENSE.md](LICENSE.md) for detailed licensing information.
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+
+See LICENSE file included for full detail of licensing.
 
 
 
@@ -152,7 +154,7 @@ Important Notes
 
 ## Player Settings
 
-**Use DXGI Flip Model Swapchain for D3D11** must be turned off to work correctly.
+`Use DXGI Flip Model Swapchain for D3D11` must be turned off to work correctly.
 
 > If App Window Utility doesn't work as you expected, see Player Settings below for reference.
 
@@ -162,7 +164,7 @@ Important Notes
 
 ## Using with High-Definition Render Pipeline (HDRP)
 
-**Color Buffer Format** must be RGB 16bit (or something supported on Host OS) to work correctly.
+`Color Buffer Format` must be RGB 16bit (or something supported on Host OS) to work correctly.
 Other renderer based on Scriptable Render Pipeline (SRP) needs setting like this too.
 
 ![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Notes_HDRP.png?raw=true)
@@ -181,3 +183,5 @@ Copyright
 =========
 
 Copyright &copy; 2022 Sator Imaging, all rights reserved.
+
+VRM and UniVRM are licensed under the MIT License.
