@@ -7,7 +7,6 @@ With this library, you can make your application window transparent, frameless a
 ![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Opacity.gif?raw=true)
 
 
-- [App Window Utility](#app-window-utility)
 - [License](#license)
 - [Features](#features)
     - [Transparent Window](#transparent-window)

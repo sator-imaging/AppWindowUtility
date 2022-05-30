@@ -1,5 +1,5 @@
-App Window Utility
-==================
+App Window Utility （日本語版マニュアル）
+======================================
 
 このライブラリは、Unity で作成されたアプリのウインドウスタイルをカスタマイズする為のものです。
 このライブラリを使用することでアプリのウインドウを透過させたり、フレームを非表示にすること等が可能です。
@@ -7,7 +7,6 @@ App Window Utility
 ![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Opacity.gif?raw=true)
 
 
-- [App Window Utility](#app-window-utility)
 - [ライセンス](#ライセンス)
 - [機能](#機能)
     - [透過ウインドウ](#透過ウインドウ)
