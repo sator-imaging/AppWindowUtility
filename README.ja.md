@@ -7,28 +7,44 @@ App Window Utility （日本語マニュアル）
 ![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Opacity.gif?raw=true)
 
 
-- [ライセンス](#ライセンス)
-- [機能](#機能)
-    - [透過ウインドウ](#透過ウインドウ)
-    - [ウインドウの不透明度](#ウインドウの不透明度)
-    - [`WindowGrabber` コンポーネント](#windowgrabber-コンポーネント)
-    - [フルスクリーンモード](#フルスクリーンモード)
-    - [常に手前に表示（Always on Top）](#常に手前に表示always-on-top)
-    - [クリックスルーモード](#クリックスルーモード)
-    - [ウインドウフレームの表示](#ウインドウフレームの表示)
-    - [カラーキーイングウインドウ](#カラーキーイングウインドウ)
-    - [加算合成モード](#加算合成モード)
-- [注意点](#注意点)
-    - [プレイヤー設定（Player Settings）](#プレイヤー設定player-settings)
-    - [High-Definition Render Pipeline (HDRP) と同時に使用する場合](#high-definition-render-pipeline-hdrp-と同時に使用する場合)
-    - [透過ウインドウとウィンドウフレームの表示](#透過ウインドウとウィンドウフレームの表示)
-- [制作・著作](#制作著作)
+
+# 制作・著作
+
+Copyright &copy; 2022-2023 Sator Imaging, all rights reserved.
 
 
 
 # ライセンス
 
-著作権とライセンスの表示をアプリに含める必要があります。詳細は同梱の LICENSE ファイルを参照してください。
+<details>
+
+```text
+MIT License
+
+Copyright (c) 2022-2023 Sator Imaging
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+</details>
+
+このソフトウェアを使用する場合は MIT License に従ってください。
 
 
 
@@ -40,6 +56,26 @@ App Window Utility （日本語マニュアル）
 #### 事前準備
 
 以下のサンプルを動作させるには、`using SatorImaging.AppWindowUtility;` を追加して名前空間を参照しておく必要があります。
+
+
+
+
+# サンプル
+
+サンプルはコチラ。その他の機能については以下のセクションをご覧ください。
+
+```csharp
+using UnityEngine;
+using SatorImaging.AppWindowUtility;
+
+public class MyTest : MonoBehaviour
+{
+    void Start()
+    {
+        AppWindowUtility.Transparent = true;
+    }
+}
+```
 
 
 
@@ -171,11 +207,3 @@ Scriptable Render Pipeline (SRP) ベースのレンダラーは同様の設定�
 `Transparent = true` を設定した後に `FrameVisibility = true` を設定すると、アプリの背景が非表示になった状態でウインドウフレームが表示されます。結果としてウインドウ全体がフレームの色で塗りつぶされることになります。
 
 <img src="https://dl.dropbox.com/s/sr55jdguin250ic/Notes_TransparentThenShowFrame.gif?dl=1" />
-
-
-
-# 制作・著作
-
-Copyright &copy; 2022 Sator Imaging, all rights reserved.
-
-VRM and UniVRM are licensed under the MIT License.

@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2022 Sator Imaging
+Copyright (c) 2022-2023 Sator Imaging
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

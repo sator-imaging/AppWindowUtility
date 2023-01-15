@@ -4,8 +4,10 @@
     "version": "1.0.0",
     "unity": "2018.3",
     "description": "Utility for configuring application window style. With this utility, you can make application window transparent, frameless and more.\n\nCopyright (c) 2021 Sator Imaging, all rights reserved.",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sator-imaging/AppWindowUtility.git"
+
+    "author": {
+        "name": "Sator Imaging",
+        "url": "https://www.sator-imaging.com/"
     }
+
 }

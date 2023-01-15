@@ -1,37 +1,54 @@
 App Window Utility
 ==================
 
-This Unity library is designed to configure application window styling.
-With this library, you can make your application window transparent, frameless and more.
+This utility is for Unity to configure application window style.
+With this utility, you can make your application window transparent, frameless and more.
 
 ![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Opacity.gif?raw=true)
 
 
-- [License](#license)
-- [Features](#features)
-    - [Transparent Window](#transparent-window)
-    - [Window Opacity](#window-opacity)
-    - [`WindowGrabber` Component](#windowgrabber-component)
-    - [Full Screen Mode](#full-screen-mode)
-    - [Always on Top](#always-on-top)
-    - [Click-Thru Mode](#click-thru-mode)
-    - [Window Frame Visibility](#window-frame-visibility)
-    - [Color-Keying Window](#color-keying-window)
-    - [Additive Composition Mode](#additive-composition-mode)
-- [Important Notes](#important-notes)
-    - [Player Settings](#player-settings)
-    - [Using with High-Definition Render Pipeline (HDRP)](#using-with-high-definition-render-pipeline-hdrp)
-    - [Transparent and Frame Visibility](#transparent-and-frame-visibility)
-- [Copyright](#copyright)
+
+
+Copyright
+=========
+
+Copyright &copy; 2022-2023 Sator Imaging, all rights reserved.
 
 
 
 License
 =======
 
-A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+<details>
 
-See LICENSE file included for full detail of licensing.
+```text
+MIT License
+
+Copyright (c) 2022-2023 Sator Imaging
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+</details>
+
+This software is licensed under the MIT License.
+
 
 
 
@@ -44,6 +61,28 @@ Features are tested with Unity 2020.3 LTS and HDRP 10.3.2 on Windows 10 64-bit.
 #### Prerequisites
 
 `using SatorImaging.AppWindowUtility;` is required to make the following examples work.
+
+
+
+Sample
+======
+
+Here is a sample code. See the following sections for more options.
+
+
+```csharp
+using UnityEngine;
+using SatorImaging.AppWindowUtility;
+
+public class MyTest : MonoBehaviour
+{
+    void Start()
+    {
+        AppWindowUtility.Transparent = true;
+    }
+}
+```
+
 
 
 ## Transparent Window
@@ -153,7 +192,7 @@ Important Notes
 
 ## Player Settings
 
-`Use DXGI Flip Model Swapchain for D3D11` must be turned off to work correctly.
+**Use DXGI Flip Model Swapchain for D3D11** must be turned off to work correctly.
 
 > If App Window Utility doesn't work as you expected, see Player Settings below for reference.
 
@@ -163,7 +202,7 @@ Important Notes
 
 ## Using with High-Definition Render Pipeline (HDRP)
 
-`Color Buffer Format` must be RGB 16bit (or something supported on Host OS) to work correctly.
+**Color Buffer Format** must be RGB 16bit (or something supported on Host OS) to work correctly.
 Other renderer based on Scriptable Render Pipeline (SRP) needs setting like this too.
 
 ![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Notes_HDRP.png?raw=true)
@@ -175,12 +214,3 @@ Other renderer based on Scriptable Render Pipeline (SRP) needs setting like this
 If you apply `Transparent = true` and then `FrameVisibility = true`, it will remove background filling from application window. Result is below, as you can see, background is filled with window frame color.
 
 ![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Notes_TransparentThenShowFrame.gif?raw=true)
-
-
-
-Copyright
-=========
-
-Copyright &copy; 2022 Sator Imaging, all rights reserved.
-
-VRM and UniVRM are licensed under the MIT License.
