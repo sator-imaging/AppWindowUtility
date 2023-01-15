@@ -16,7 +16,9 @@ Copyright &copy; 2022-2023 Sator Imaging, all rights reserved.
 
 # ライセンス
 
+<p>
 <details>
+<summary>上記の著作権表示および本許諾表示を、ソフトウェアのすべての複製または重要な部分に記載するものとします。</summary>
 
 ```text
 MIT License
@@ -43,8 +45,8 @@ SOFTWARE.
 ```
 
 </details>
+</p>
 
-このソフトウェアを使用する場合は MIT License に従ってください。
 
 
 

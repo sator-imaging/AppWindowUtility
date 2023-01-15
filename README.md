@@ -19,7 +19,10 @@ Copyright &copy; 2022-2023 Sator Imaging, all rights reserved.
 License
 =======
 
+<p>
 <details>
+<summary>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</summary>
 
 ```text
 MIT License
@@ -46,8 +49,7 @@ SOFTWARE.
 ```
 
 </details>
-
-This software is licensed under the MIT License.
+</p>
 
 
 
