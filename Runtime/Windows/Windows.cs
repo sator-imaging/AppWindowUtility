@@ -158,8 +158,8 @@ namespace SatorImaging.AppWindowUtility
             }
             else
             {
-                // keep client size for showing frame again
-                if (AppWindowUtility.FullScreen)
+                // store last client size for showing frame again
+                if (!AppWindowUtility.FullScreen)
                 {
                     WinApi.GetClientRect(hWnd, out lastClientRect);
                     //Debug.Log($"SetFrameVisibility: Client Rect stored.");
