@@ -4,6 +4,8 @@ App Window Utility
 This utility is for Unity to configure application window style.
 With this utility, you can make your application window transparent, frameless and more.
 
+[🇯🇵 日本語版](README.ja.md)
+
 ![](https://github.com/sator-imaging/sator-imaging.github.io/blob/master/AppWindowUtility/images/Opacity.gif?raw=true)
 
 
