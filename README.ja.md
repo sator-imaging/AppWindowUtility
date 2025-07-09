@@ -79,6 +79,9 @@ public class MyTest : MonoBehaviour
 }
 ```
 
+> [!IMPORTANT]
+> 私の命名が悪かったせいで、`AppWindowUtility.AppWindowUtility.Transparent` みたいな冗長な名前で API にアクセスしないとダメかもです………
+
 
 
 ## 透過ウインドウ
