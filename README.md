@@ -85,7 +85,7 @@ public class MyTest : MonoBehaviour
 }
 ```
 
-> [!TIP]
+> [!IMPORTANT]
 > As of my bad naming, you may need to access API thru redundant name like `AppWindowUtility.AppWindowUtility.Transparent`...
 
 
